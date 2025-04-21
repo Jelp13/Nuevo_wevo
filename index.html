@@ -25,7 +25,6 @@
     </nav>
 
     <section class="hero" id="hero">
-
         <!-- Elementos de fondo -->
         <div class="particles" id="particles"></div>
         <div class="msi-accent"></div>
@@ -34,25 +33,55 @@
         <div class="bg-line-2"></div>
         
         <!-- Logos grandes en el fondo -->
-        <div class="bg-msi-large">
-            <img src="Imagenes/download.jpeg" alt="MSI Gaming Logo Background">
-        </div>
+      
         <div class="bg-logitech-large">
-            <img src="Imagenes/logitech.png" alt="Logitech Logo Background">
+            <img src="Imagens de fondo/logitech.png" alt="Logitech Logo Background">
         </div>
         <div class="bg-msi-logo">
-            <img src="Imagenes/download.jpeg" alt="MSI Gaming Logo">
+            <img src="Imagens de fondo/download.jpeg" alt="MSI Gaming Logo">
         </div>
-        <div class="bg-logitech-logo">
-            <img src="Imagenes/logitech.png" alt="Logitech Logo">
-        </div>
-        
         <!-- Logos de marcas destacados -->
         <div class="msi-shield">
-            <img src="Imagenes/download.jpeg" alt="MSI Gaming Shield">
+            <img src="Imagens de fondo/download.jpeg" alt="MSI Gaming Shield">
         </div>
         <div class="logitech-logo">
-            <img src="Imagenes/logitech.png" alt="Logitech Logo Principal">
+            <img src="Imagens de fondo/logitech.png" alt="Logitech Logo Principal">
+        </div>
+        
+        <!-- Carrusel añadido -->
+        <div class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide">
+                        <img src="Imagens de fondo/Msi laptops.webp" alt="MSI Gaming Laptops">
+                        <div class="slide-content">
+                            <h3>Equipos Gaming de Alta Potencia</h3>
+                            <p>Descubre nuestra nueva colección MSI</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="Imagens de fondo/Perifericos logitech.jpg" alt="Logitech Periféricos Gaming">
+                        <div class="slide-content">
+                            <h3>Periféricos para Profesionales</h3>
+                            <p>Precisión y confort con Logitech</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="Imagens de fondo/deso.png" alt="Experiencia Gaming">
+                        <div class="slide-content">
+                            <h3>Experiencia Gaming Inmersiva</h3>
+                            <p>Hardware diseñado para ganar</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button prev">&#10094;</button>
+                <button class="carousel-button next">&#10095;</button>
+                <div class="carousel-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+            </div>
         </div>
         
         <!-- Contenido principal -->
@@ -78,7 +107,7 @@
         </div>
     </section>
     
-    
+    <!-- Resto del contenido -->
     <!-- Sección Nosotros -->
     <section class="section" id="nosotros">
         <h2>Nosotros</h2>
@@ -135,8 +164,71 @@
     </footer>
 
     <script>
-        // Código JavaScript aquí si es necesario
-
+        // Script para el funcionamiento del carrusel
+        document.addEventListener("DOMContentLoaded", function() {
+            const carousel = document.querySelector('.carousel');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const prevBtn = document.querySelector('.carousel-button.prev');
+            const nextBtn = document.querySelector('.carousel-button.next');
+            const indicators = document.querySelectorAll('.indicator');
+            
+            let currentIndex = 0;
+            const totalSlides = slides.length;
+            
+            // Función para actualizar el carrusel
+            function updateCarousel() {
+                carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+                
+                // Actualizar indicadores
+                indicators.forEach((indicator, index) => {
+                    if (index === currentIndex) {
+                        indicator.classList.add('active');
+                    } else {
+                        indicator.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Evento para botón anterior
+            prevBtn.addEventListener('click', function() {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            });
+            
+            // Evento para botón siguiente
+            nextBtn.addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            });
+            
+            // Eventos para indicadores
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', function() {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+            
+            // Rotación automática
+            setInterval(function() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            }, 5000);
+            
+            // Inicializar carrusel
+            updateCarousel();
+            
+            // Crear partículas para el fondo
+            const particlesContainer = document.getElementById('particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 10 + 's';
+                particlesContainer.appendChild(particle);
+            }
+        });
     </script>
 </body>
 </html>
