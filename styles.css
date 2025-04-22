@@ -207,7 +207,7 @@ body {
 .msi-shield {
     position: absolute;
     right: 1%;
-    top: 33%;
+    top: 16%;
     z-index: 3;
     filter: drop-shadow(0 0 10px rgba(215, 25, 32, 0.7));
     transition: transform 0.5s ease;
@@ -222,7 +222,7 @@ body {
 .logitech-logo {
     position: absolute;
     left: 2%;
-    top: 20%;
+    top: 6%;
     z-index: 3;
     filter: drop-shadow(0 0 10px rgba(0, 136, 204, 0.7));
     transition: transform 0.5s ease;
@@ -238,7 +238,7 @@ body {
 .bg-msi-logo {
     position: absolute;
     bottom: 2%;
-    right: 13%;
+    right: 4%;
     z-index: 2;
     transform: rotate(-5deg);
     transition: transform 0.5s ease;
@@ -252,7 +252,7 @@ body {
 .bg-logitech-logo {
     position: absolute;
     top: 1%;
-    left: 20%;
+    left: 30%;
     z-index: 2;
     transform: rotate(3deg);
     transition: transform 0.5s ease;
@@ -282,8 +282,8 @@ body {
 /* Logo grande de Logitech en el fondo */
 .bg-logitech-large {
     position: absolute;
-    left: 15%;
-    bottom: -3%;
+    left: 5%;
+    bottom: -8%;
     z-index: 1;
     transform: rotate(5deg);
     transition: transform 0.8s ease;
