@@ -390,7 +390,7 @@ body {
 
 .carousel {
     display: flex;
-    transition: transform 0.9s ease;
+    transition: transform 2s ease;
     height: 340px;
 }
 
