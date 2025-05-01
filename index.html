@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NUEVO WEVO | Potenciando Experiencias</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav class="navbar">
         <a href="#" class="logo">
             <svg width="30" height="30" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="45" fill="#111" stroke="#fff" stroke-width="2"/>
-                <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="40" font-weight="bold">NW</text>
+                <circle cx="50" cy="50" r="45" fill="#111" stroke="#fff" stroke-width="2" />
+                <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="40"
+                    font-weight="bold">NW</text>
             </svg>
             NUEVO WEVO
         </a>
-  
+
         <ul class="nav-links">
             <li><a href="#hero">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
@@ -31,9 +35,9 @@
         <div class="logitech-accent"></div>
         <div class="bg-line-1"></div>
         <div class="bg-line-2"></div>
-        
+
         <!-- Logos grandes en el fondo -->
-      
+
         <div class="bg-logitech-large">
             <img src="Imagens de fondo/logitech.png" alt="Logitech Logo Background">
         </div>
@@ -47,7 +51,7 @@
         <div class="logitech-logo">
             <img src="Imagens de fondo/logitech.png" alt="Logitech Logo Principal">
         </div>
-        
+
         <!-- Carrusel añadido -->
         <div class="hero-carousel">
             <div class="carousel-container">
@@ -83,7 +87,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Contenido principal -->
         <div class="hero-content">
             <h1>Potenciando Experiencias</h1>
@@ -95,7 +99,7 @@
         <div class="scroll-down">
             <span>Scroll para descubrir</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
             </svg>
         </div>
 
@@ -114,154 +118,178 @@
 
 
     <!-- Sección Productos -->
-<section class="section products-section" id="productos">
-    <h2>Nuestros Productos</h2>
-    <div class="products-container">
-        <!-- Producto 1 -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="/api/placeholder/300/200" alt="MSI Gaming Laptop">
-                <div class="discount-badge">-15%</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">MSI Katana GF66 Gaming Laptop</h3>
-                <div class="product-price">
-                    <span class="current-price">$1,299.99</span>
-                    <span class="original-price">$1,529.99</span>
+    <section class="section products-section" id="productos">
+        <h2>Nuestros Productos</h2>
+        
+        <!-- Navegación para los productos - ahora está dentro de la sección -->
+        <div class="product-navigation">
+            <button class="product-nav-btn prev">&#10094;</button>
+            <button class="product-nav-btn next">&#10095;</button>
+        </div>
+        
+        <div class="products-container">
+            <!-- Producto 1 - Laptop MSI -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/200" alt="MSI Gaming Laptop">
+                    <div class="discount-badge">-15%</div>
                 </div>
-                <div class="product-buttons">
-                    <button class="add-to-cart">Añadir al carrito</button>
-                    <button class="wishlist-btn">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                        </svg>
-                    </button>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">MSI Katana GF66 Gaming Laptop</h3>
+                        <div class="product-price">
+                            <span class="current-price">$1,299.99</span>
+                            <span class="original-price">$1,529.99</span>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        <button class="wishlist-btn">
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/200" alt="Logitech G Pro X">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">Logitech G Pro X Wireless Headset</h3>
+                        <div class="product-price">
+                            <span class="current-price">$199.99</span>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/200" alt="MSI Optix Monitor">
+                    <div class="discount-badge">-10%</div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">MSI Optix MAG274QRF-QD Monitor Gaming de 27 pulgadas</h3>
+                        <div class="product-price">
+                            <span class="current-price">$449.99</span>
+                            <span class="original-price">$499.99</span>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/200" alt="Logitech G Pro X Superlight">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">Logitech G Pro X Superlight Mouse</h3>
+                        <div class="product-price">
+                            <span class="current-price">$139.99</span>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/200" alt="MSI GeForce RTX 4070">
+                    <div class="discount-badge">-8%</div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">MSI GeForce RTX 4070 VENTUS 8GB GDDR6X</h3>
+                        <div class="product-price">
+                            <span class="current-price">$649.99</span>
+                            <span class="original-price">$699.99</span>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/300/200" alt="Logitech G915 TKL">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3 class="product-title">Logitech G915 TKL Teclado Gaming</h3>
+                        <div class="product-price">
+                            <span class="current-price">$229.99</span>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="add-to-cart">Añadir al carrito</button>
+                        <button class="wishlist-btn">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Producto 2 -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="/api/placeholder/300/200" alt="Logitech G Pro X">
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">Logitech G Pro X Wireless Headset</h3>
-                <div class="product-price">
-                    <span class="current-price">$199.99</span>
-                </div>
-                <div class="product-buttons">
-                    <button class="add-to-cart">Añadir al carrito</button>
-                    <button class="wishlist-btn">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 3 -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="/api/placeholder/300/200" alt="MSI Optix Monitor">
-                <div class="discount-badge">-10%</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">MSI Optix MAG274QRF-QD Monitor</h3>
-                <div class="product-price">
-                    <span class="current-price">$449.99</span>
-                    <span class="original-price">$499.99</span>
-                </div>
-                <div class="product-buttons">
-                    <button class="add-to-cart">Añadir al carrito</button>
-                    <button class="wishlist-btn">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 4 -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="/api/placeholder/300/200" alt="Logitech G Pro X Superlight">
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">Logitech G Pro X Superlight Mouse</h3>
-                <div class="product-price">
-                    <span class="current-price">$139.99</span>
-                </div>
-                <div class="product-buttons">
-                    <button class="add-to-cart">Añadir al carrito</button>
-                    <button class="wishlist-btn">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 5 -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="/api/placeholder/300/200" alt="MSI GeForce RTX 4070">
-                <div class="discount-badge">-8%</div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">MSI GeForce RTX 4070 VENTUS</h3>
-                <div class="product-price">
-                    <span class="current-price">$649.99</span>
-                    <span class="original-price">$699.99</span>
-                </div>
-                <div class="product-buttons">
-                    <button class="add-to-cart">Añadir al carrito</button>
-                    <button class="wishlist-btn">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Producto 6 -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="/api/placeholder/300/200" alt="Logitech G915 TKL">
-            </div>
-            <div class="product-info">
-                <h3 class="product-title">Logitech G915 TKL Teclado Gaming</h3>
-                <div class="product-price">
-                    <span class="current-price">$229.99</span>
-                </div>
-                <div class="product-buttons">
-                    <button class="add-to-cart">Añadir al carrito</button>
-                    <button class="wishlist-btn">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
+    </section>
 
     <!-- Sección Nosotros -->
     <section class="section" id="nosotros">
         <h2>Nosotros</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>NUEVO WEVO es una empresa dedicada a potenciar la experiencia de juego a través de productos y soluciones de alta calidad. Trabajamos en colaboración con las marcas líderes del sector como MSI y Logitech para ofrecer a nuestros clientes lo mejor del mercado gaming.</p>
-                <p>Nuestra misión es acercar la tecnología gaming más avanzada a todos los jugadores, desde novatos hasta profesionales, proporcionando no solo productos, sino también asesoramiento experto y soporte continuo.</p>
-                <p>Fundada en 2020, NUEVO WEVO ha crecido rápidamente posicionándose como un referente en el sector gracias a nuestra pasión por los videojuegos y nuestro compromiso con la excelencia.</p>
+                <p>NUEVO WEVO es una empresa dedicada a potenciar la experiencia de juego a través de productos y
+                    soluciones de alta calidad. Trabajamos en colaboración con las marcas líderes del sector como MSI y
+                    Logitech para ofrecer a nuestros clientes lo mejor del mercado gaming.</p>
+                <p>Nuestra misión es acercar la tecnología gaming más avanzada a todos los jugadores, desde novatos
+                    hasta profesionales, proporcionando no solo productos, sino también asesoramiento experto y soporte
+                    continuo.</p>
+                <p>Fundada en 2020, NUEVO WEVO ha crecido rápidamente posicionándose como un referente en el sector
+                    gracias a nuestra pasión por los videojuegos y nuestro compromiso con la excelencia.</p>
             </div>
             <div class="about-image">
                 <img src="/api/placeholder/600/400" alt="Equipo NUEVO WEVO">
@@ -275,13 +303,14 @@
             <div class="footer-logo">
                 <a href="#">
                     <svg width="30" height="30" viewBox="0 0 100 100">
-                        <circle cx="50" cy="50" r="45" fill="#111" stroke="#fff" stroke-width="2"/>
-                        <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="40" font-weight="bold">NW</text>
+                        <circle cx="50" cy="50" r="45" fill="#111" stroke="#fff" stroke-width="2" />
+                        <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="40"
+                            font-weight="bold">NW</text>
                     </svg>
                     NUEVO WEVO
                 </a>
                 <p>Potenciando tu experiencia gaming con los mejores productos y servicios del mercado.</p>
- 
+
             </div>
             <div class="footer-links">
                 <div class="footer-column">
@@ -309,72 +338,7 @@
         </div>
     </footer>
 
-    <script>
-        // Script para el funcionamiento del carrusel
-        document.addEventListener("DOMContentLoaded", function() {
-            const carousel = document.querySelector('.carousel');
-            const slides = document.querySelectorAll('.carousel-slide');
-            const prevBtn = document.querySelector('.carousel-button.prev');
-            const nextBtn = document.querySelector('.carousel-button.next');
-            const indicators = document.querySelectorAll('.indicator');
-            
-            let currentIndex = 0;
-            const totalSlides = slides.length;
-            
-            // Función para actualizar el carrusel
-            function updateCarousel() {
-                carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-                
-                // Actualizar indicadores
-                indicators.forEach((indicator, index) => {
-                    if (index === currentIndex) {
-                        indicator.classList.add('active');
-                    } else {
-                        indicator.classList.remove('active');
-                    }
-                });
-            }
-            
-            // Evento para botón anterior
-            prevBtn.addEventListener('click', function() {
-                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-                updateCarousel();
-            });
-            
-            // Evento para botón siguiente
-            nextBtn.addEventListener('click', function() {
-                currentIndex = (currentIndex + 1) % totalSlides;
-                updateCarousel();
-            });
-            
-            // Eventos para indicadores
-            indicators.forEach((indicator, index) => {
-                indicator.addEventListener('click', function() {
-                    currentIndex = index;
-                    updateCarousel();
-                });
-            });
-            
-            // Rotación automática
-            setInterval(function() {
-                currentIndex = (currentIndex + 1) % totalSlides;
-                updateCarousel();
-            }, 9000);
-            
-            // Inicializar carrusel
-            updateCarousel();
-            
-            // Crear partículas para el fondo
-            const particlesContainer = document.getElementById('particles');
-            for (let i = 0; i < 50; i++) {
-                const particle = document.createElement('div');
-                particle.classList.add('particle');
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 10 + 's';
-                particlesContainer.appendChild(particle);
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
